@@ -1,0 +1,138 @@
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+ body{
+    height:100vh;
+    width:100%;
+    background-image:url(evbg.png);
+    background-size:cover;
+    background-position:center;
+    position:relative;
+  }
+  p
+  {
+    color:#fff;
+    position :center;
+    font-size:50px;
+  }
+  *
+{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+.container
+{
+    height:100vh;
+    width:100%;
+    background-image:url(evbg.png);
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+.navbar
+{
+    width:88%;
+    margin:auto;
+    padding:15px 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.navbar ul li
+{
+    list-style:none;
+    display:inline-block;
+    margin:0 15px;
+}
+.navbar ul li a
+{
+    text-decoration:none;
+    color: #5f5f5f;
+    font-size:15px;
+}
+.logo
+{
+    width:140px;
+    cursor:pointer;
+}
+li
+{
+    float:left;
+    border-right:1px solid #fff;
+}
+a
+{
+    display:block;
+    padding:0 28px;
+    color:#fff;
+    text-decoration: none;
+}
+a:hover,.active a
+{
+    background-color:#b6e2d3;
+}
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  
+  .gallery {
+    display: flex;
+    margin: 10px auto;
+    max-width: 600px;
+    position: relative;
+    padding-top: 66.6666666667%;
+  }
+  @media screen and (min-width: 600px) {
+    .gallery {
+      padding-top: 400px;
+    }
+  }
+  .gallery__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .gallery__thumb {
+    padding-top: 6px;
+    margin: 6px;
+    display: block;
+  }
+  .gallery__selector {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .gallery__selector:checked + .gallery__img {
+    opacity: 1;
+  }
+  .gallery__selector:checked ~ .gallery__thumb > img {
+    box-shadow: 0 0 0 3px #0be2f6;
+  }
+  .left-col p
+{
+    color:#fff;
+    font-size:20px;
+    margin:2%;
+    top:auto;
+}
